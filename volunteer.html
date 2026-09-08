@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Volunteer — SVIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="navbar"><a class="brand" href="index.html"><span>🍃</span> Nourish</a><button class="menu-btn" onclick="toggleMenu()">☰</button><nav id="nav"><a href="index.html">Home</a><a href="donate.html">Donate</a><a href="request.html">Request Food</a><a class="active" href="volunteer.html">Volunteer</a><a href="dashboard.html">Dashboard</a></nav></header>
+<main>
+<section class="page-hero"><p class="eyebrow">LEND A HAND</p><h1>Be part of the good.</h1><p>Volunteers help coordinate pickups, deliveries and community support.</p></section>
+<section class="form-wrap"><form id="volunteerForm" class="form-card">
+<h2>Volunteer registration</h2><div class="form-grid">
+<label>Name<input id="vName" required placeholder="Your name"></label>
+<label>Email<input id="vEmail" required type="email" placeholder="you@example.com"></label>
+<label>Phone<input id="vPhone" required type="tel" placeholder="10-digit number"></label>
+<label>Area<input id="vArea" required placeholder="Your area"></label>
+<label class="full">How would you like to help?<select id="vRole"><option>Food pickup & delivery</option><option>Food collection</option><option>Community outreach</option><option>Event support</option></select></label>
+</div><button class="btn primary" type="submit">Join Nourish →</button><p id="volMessage" class="success"></p>
+</form></section>
+</main><footer><span>🍃 SVIT</span><small>Together, we can do more.</small></footer>
+<script src="js/main.js"></script></body></html>

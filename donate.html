@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Donate Food — SVIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="navbar"><a class="brand" href="index.html"><span>🍃</span> SVIT</a><button class="menu-btn" onclick="toggleMenu()">☰</button><nav id="nav"><a href="index.html">Home</a><a class="active" href="donate.html">Donate</a><a href="request.html">Request Food</a><a href="volunteer.html">Volunteer</a><a href="dashboard.html">Dashboard</a></nav></header>
+<main>
+<section class="page-hero"><p class="eyebrow">MAKE A DIFFERENCE</p><h1>Donate good food.</h1><p>Tell us what you have and we'll add it to the community food board.</p></section>
+<section class="form-wrap"><form id="donationForm" class="form-card">
+<h2>Food donation</h2><p class="muted">All fields marked below help people coordinate a safe pickup.</p>
+<div class="form-grid">
+<label>Donor name<input id="donorName" required placeholder="Your name"></label>
+<label>Food type<input id="foodType" required placeholder="e.g. Rice, vegetables"></label>
+<label>Quantity<input id="quantity" required placeholder="e.g. 10 kg"></label>
+<label>Expiry / best before<input id="expiry" required type="date"></label>
+<label class="full">Pickup location<input id="location" required placeholder="Area or pickup point"></label>
+<label>Contact number<input id="phone" required type="tel" placeholder="10-digit number"></label>
+<label>Food condition<select id="condition"><option>Freshly prepared</option><option>Packaged</option><option>Fresh produce</option><option>Dry groceries</option></select></label>
+</div>
+<button class="btn primary" type="submit">Publish donation →</button><p id="formMessage" class="success"></p>
+</form></section>
+</main><footer><span>🍃 Nourish</span><small>Thank you for sharing.</small></footer>
+<script src="js/main.js"></script></body></html>

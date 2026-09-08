@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard — SVIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="navbar"><a class="brand" href="index.html"><span>🍃</span> SVIT</a><button class="menu-btn" onclick="toggleMenu()">☰</button><nav id="nav"><a href="index.html">Home</a><a href="donate.html">Donate</a><a href="request.html">Request Food</a><a href="volunteer.html">Volunteer</a><a class="active" href="dashboard.html">Dashboard</a></nav></header>
+<main>
+<section class="page-hero"><p class="eyebrow">YOUR COMMUNITY SNAPSHOT</p><h1>Nourish dashboard.</h1><p>See donations and volunteer activity saved in this browser.</p></section>
+<section class="section">
+<div class="dash-stats"><div><span>🍱</span><b id="dDonations">0</b><small>Donations</small></div><div><span>🙋</span><b id="dVolunteers">0</b><small>Volunteers</small></div><div><span>🥗</span><b id="dQuantity">0</b><small>Items listed</small></div></div>
+<div class="dashboard-card"><div class="section-head"><div><p class="eyebrow">RECENT DONATIONS</p><h2>Food activity</h2></div><button class="btn danger" onclick="clearData()">Clear local data</button></div><div id="dashList"></div></div>
+</section></main><footer><span>🍃 SVIT</span><small>Demo dashboard using browser LocalStorage.</small></footer>
+<script src="js/main.js"></script></body></html>
